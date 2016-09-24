@@ -52,7 +52,7 @@ unsigned char *LoadBitmapFile(char *filename, BITMAPINFOHEADER *bitmapInfoHeader
     }
 
     //swap the r and b values to get RGB (bitmap is BGR)
-    for (imageIdx = 0;imageIdx < bitmapInfoHeader->biSizeImage;imageIdx+=3)
+    for (imageIdx = 0;imageIdx < bitmapInfoHeader->biSizeImage;imageIdx+=4)
     {
         tempRGB = bitmapImage[imageIdx];
         bitmapImage[imageIdx] = bitmapImage[imageIdx + 2];
@@ -104,7 +104,7 @@ void WriteBitmapFile(char *filename, BITMAPINFOHEADER *bitmapInfoHeader,
     }
 
     //swap the r and b values to get RGB (bitmap is BGR)
-    for (imageIdx = 0;imageIdx < bitmapInfoHeader->biSizeImage;imageIdx+=3)
+    for (imageIdx = 0;imageIdx < bitmapInfoHeader->biSizeImage;imageIdx+=4)
     {
         tempRGB = bitmapImage[imageIdx];
         bitmapImage[imageIdx] = bitmapImage[imageIdx + 2];
