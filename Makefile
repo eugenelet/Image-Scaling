@@ -5,7 +5,7 @@ CC=g++
 # options I'll pass to the compiler.
 CFLAGS=-c -Wall
 DFLAGS=-g
-OUT=bitmapRW
+OUT=imageScaling
 SRC=main.cpp bitmapRW.cpp
 
 all: $(OUT)
