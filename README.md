@@ -2,11 +2,10 @@ Template for Reading BMP Files
 ==============================
 
 This is an example of resizing image in different scale levels.
+The containing executable file is compiled for x86 architecture under Linux.
 
 To compile
 > **make** 
-
-The containing executable file is compiled for x86 architecture under Linux.
 
 To run the executable 
 > **./[executable file name] [input file] [output file][scale factor]**
