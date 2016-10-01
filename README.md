@@ -1,5 +1,5 @@
-Template for Reading BMP Files
-==============================
+Scaling of Images in BMP Format
+===============================
 
 This is an example of resizing image in different scale levels.
 The containing executable file is compiled for x86 architecture under Linux.
